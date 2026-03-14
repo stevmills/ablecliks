@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+
+# IDE
+.cursor/
+.vscode/
+*.swp
+*.swo
+
+# Ableton analysis files
+*.asd
+
+# Windows Zone Identifier files
+*:Zone.Identifier
+
+# User config (personal paths -- copy from cliks.toml.example)
+cliks.toml
+
+# Source samples (large binary files -- not tracked in git)
+samples/
+
+# Build output
+output/
+
+# pytest
+.pytest_cache/
+htmlcov/
+.coverage

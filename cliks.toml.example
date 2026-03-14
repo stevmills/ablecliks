@@ -1,0 +1,40 @@
+# cliks.toml -- configuration for the cliks voice pack builder
+#
+# Copy this file to cliks.toml and fill in paths for your system.
+# All values are optional. CLI arguments override config values.
+# Precedence: CLI flag > cliks.toml > built-in default.
+
+[paths]
+# Source directory containing voice folders (relative to this file or absolute).
+source_dir = "samples"
+
+# Root output directory for built voice packs.
+# For WSL -> Windows output, use the /mnt/<drive>/... path.
+# Example:
+#   output_dir = "/mnt/c/Users/YOUR_USERNAME/Music/Ableton/VoicePacks"
+output_dir = ""
+
+[naming]
+# Character used to join slug parts.
+slug_separator = "-"
+
+[build]
+# If true, existing output voice folders are deleted and rebuilt on every build.
+# Default is false (safer). Use --force on the CLI to override per-run.
+overwrite = false
+
+[patch]
+# Path (WSL) to the single-voice Drum Rack template saved from Ableton.
+# The repo includes a default template at templates/cliks-template.adg.
+# Leave empty to use the bundled template.
+template = ""
+
+# Directory where generated per-voice .adg presets will be written.
+# Example:
+#   presets_dir = "/mnt/c/Users/YOUR_USERNAME/OneDrive/Documents/Ableton/User Library/Presets/Instruments/Instrument Rack/Cliks"
+presets_dir = ""
+
+# Windows path to the VoicePacks root folder (used inside the .adg XML so
+# Ableton on Windows can locate the WAV files).
+# Derived automatically from paths.output_dir if left empty.
+voice_pack_windows_root = ""
