@@ -1,4 +1,4 @@
-# cliks
+# AbleCliks
 
 A Python CLI for converting raw WAV click/percussion samples into standardized
 voice packs for Ableton Live Drum Rack template workflows.
